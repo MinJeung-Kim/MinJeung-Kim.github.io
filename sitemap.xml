@@ -25,20 +25,4 @@
     {% endif %}
     {% endif %}
     {% endfor %}
-    <url>
-        <loc>http://minjeung-kim.github.io/</loc>
-        <priority>0.1</priority>
-    </url>
-    <url>
-        <loc>http://www.minjeung-kim.github.io/</loc>
-        <priority>0.1</priority>
-    </url>
-    <url>
-        <loc>https://minjeung-kim.github.io/assets/search/search.json</loc>
-        <priority>0.1</priority>
-    </url>
-    <url>
-        <loc>https://minjeung-kim.github.io/feed.xml</loc>
-        <priority>0.1</priority>
-    </url>
 </urlset>
