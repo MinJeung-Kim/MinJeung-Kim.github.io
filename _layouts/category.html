@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="tags-header">
+    <h2 class="tags-header-title">{{ page.title }}</h2>
+    <div class="tags-header-line"></div>
+</div>
+
+<div class="catalogue" style="padding-top:0">
+    {% for post in site.posts %}
+    {% if page.title == post.catalogue %}
+    <div class="catalogue-tags">
+        <span class="small-tag">
+            <a href="{{site.baseurl}}/category/{{post.catalogue}}" class="tag">
+                {{post.catalogue}}
+            </a>    
+        </span>
+        <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%Y-%m-%d" }}</time>
+    </div>
+    <div class="catalogue-container">
+        <a href="{{site.baseurl}}/category/{{post.catalogue}}" class="tag">
+            {% if post.catalogue == 'book'%}
+            <div class="img-book-container">
+                <img src="{{site.baseurl}}/assets/img/title/{{post.catalogue}}/{{post.subject}}.png" />
+            </div>
+            {% else %}
+            <div class="img-container">
+                <img src="{{site.baseurl}}/assets/img/title/{{post.catalogue}}/{{post.subject}}.png" />
+            </div>
+            {% endif %}
+        </a>
+
+        <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+            <div>
+                <h1 class="catalogue-title">{{ post.title }}</h1>
+                <div class="catalogue-line"></div>
+                <p>
+                    {{ post.excerpt }}
+                </p>
+            </div>
+        </a>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
