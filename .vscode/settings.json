@@ -1,2 +1,5 @@
 {
+  "[html]": {
+    "editor.formatOnSave": false
+  }
 }
