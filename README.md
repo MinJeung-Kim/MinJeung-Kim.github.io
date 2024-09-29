@@ -2,6 +2,12 @@
 
 백그라운드에서 실행
 
-```bas
+```bash
 $ docker compose up dev --build -d
+```
+
+docker 실행 중지
+
+```bash
+$ docker compose stop
 ```
