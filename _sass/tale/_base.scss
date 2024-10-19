@@ -36,6 +36,7 @@ h6 {
   line-height: normal;
   margin-bottom: 0.9rem;
   margin-top: 1.5rem;
+  word-break: keep-all;
 }
 
 h1 {
@@ -46,7 +47,7 @@ h1 {
 h2 {
   margin-top: 3.5rem;
   // color: $default-color;
-  color: rgba(98, 191, 255, 0.70);
+  color: rgba(98, 191, 255, 0.7);
 }
 
 h3 {
@@ -59,10 +60,10 @@ a {
 }
 
 blockquote {
-  border-left: .25rem solid bisque;
+  border-left: 0.25rem solid bisque;
   color: bisque;
-  margin: .8rem 0 1.5rem;
-  padding: .5rem 1rem;
+  margin: 0.8rem 0 1.5rem;
+  padding: 0.5rem 1rem;
   font-style: italic;
 
   p:last-child {
@@ -79,7 +80,7 @@ img {
   margin: 0 0 1rem;
   max-width: 100%;
 
-  @media (max-width: 630px){
+  @media (max-width: 630px) {
     max-width: 100%;
   }
 }
@@ -88,7 +89,7 @@ td {
   vertical-align: top;
 }
 
-hr{
+hr {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   margin-bottom: 1.2rem;

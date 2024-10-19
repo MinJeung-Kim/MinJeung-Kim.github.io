@@ -11,3 +11,5 @@ docker 실행 중지
 ```bash
 $ docker compose stop
 ```
+
+http://localhost:4000/
