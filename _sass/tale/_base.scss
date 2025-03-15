@@ -1,6 +1,7 @@
 * {
   @include box-sizing;
-  line-height: 2;
+
+  line-height: 25px;
 }
 
 html,
@@ -79,6 +80,7 @@ img {
   display: block;
   margin: 0 0 1rem;
   max-width: 100%;
+  padding-bottom: 0.5rem;
 
   @media (max-width: 630px) {
     max-width: 100%;
